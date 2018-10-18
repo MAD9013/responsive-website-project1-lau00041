@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Mali');
 /* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
 
 /*************************************************
@@ -15,7 +15,7 @@
 }
 html{
     font-size: 16px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Mali, Helvetica, Arial, sans-serif;
     /* change this font stack to your own choices */
     line-height: 1.5;
 }
@@ -44,9 +44,17 @@ img{
 header{
     padding:1rem 2rem;
     color: black;
+    background-image: url(/img/1000x600.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 header > h1{
-    
+    display: none;
+}
+header > h1:after{
+    display: block;
+    content: 'Jessica Lau';
 }
 header > h2{
     
