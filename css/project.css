@@ -43,7 +43,7 @@ img{
 header{
     padding:1rem 2rem;
     color: black;
-    background-image: url(/img/1000x600.jpg);
+    background-image: url(/img/nature/1000x600.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,8 +61,221 @@ header > h2{
             NAVMENU
 *************************************************/
 nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     padding:1rem 2rem;
     background-color: hsl(0, 0%, 90%);   
+    border: 1px solid hsl(0, 0%, 70%);
+
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding:1rem 2rem;
+
+}
+section{
+
+}
+section p{
+    
+}
+section p img{
+
+}
+.responsive{
+    float: center;
+    width: 100%;
+    height: auto;
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    column-gap: 30px;
+    justify-items: space-between;
+    padding:1rem 2rem;    
+}
+.foot nav{
+    display: grid;
+    grid-template-columns: 150px 150px ;
+    justify-items: center;
+    
+}
+.foot section{
+    background-color: hsl(0, 0%, 70%);
+}
+.foot dl{
+    
+}
+.foot dt{
+    
+}
+.foot dd{
+}
+.foot dd a,
+.foot dd a:visited{
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px){
+    nav
+    {
+        display: grid;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+    .mainnav a{
+        height: 50px;
+        border-bottom: 3px solid hsl(0, 0%, 70%);
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(100, 50%, 70%);
+    }
+    h1, h2{
+        color: hsl(100, 50%, 70%);
+        font-size: 32px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 600px) and (max-width:999px){
+    .mainnav a{
+        display: inline-flex;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(200, 50%, 70%);
+    }
+    h1, h2{
+        color: hsl(200, 50%, 70%);
+    }
+    .responsive{
+        width: 50%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 30px;
+    }
+
+}
+@media (min-width: 1000px){
+    .mainnav a{
+        display: inline-flex;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(300, 50%, 70%);
+    }
+    h1, h2{
+        color: hsl(300, 50%, 70%);
+    }
+    main{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-column-gap: 30px;
+    }
+}
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Mali, Times, Georgia, sans-serif;
+    line-height: 1.5;
+}
+p{
+    
+}
+a{
+    
+}
+ul{
+    
+}
+ol{
+    
+}
+li{
+    
+}
+img{
+    width: 25%;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    color: black;
+    background-image: url(/img/nature/1000x600.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+header > h1{
+    
+}
+
+header > h2{
+    
+}
+
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    background-color: hsl(0, 0%, 90%);   
+    border: 1px solid hsl(0, 0%, 70%);
+
 }
 nav > a,
 nav > a:visited,
@@ -82,6 +295,7 @@ nav > a:hover{
 *************************************************/
 main{
     padding:1rem 2rem;
+
 }
 section{
 
@@ -90,20 +304,32 @@ section p{
     
 }
 section p img{
-    
+
+}
+.responsive{
+    float: center;
+    width: 100%;
+    height: auto;
 }
 
 /*************************************************
             FOOTER
 *************************************************/
 footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    column-gap: 30px;
+    justify-items: space-between;
     padding:1rem 2rem;    
 }
 .foot nav{
+    display: grid;
+    grid-template-columns: 150px 150px ;
+    justify-items: center;
     
 }
 .foot section{
-    
+    background-color: hsl(0, 0%, 70%);
 }
 .foot dl{
     
@@ -112,7 +338,6 @@ footer{
     
 }
 .foot dd{
-    
 }
 .foot dd a,
 .foot dd a:visited{
@@ -123,15 +348,23 @@ footer{
 .foot dd a:hover{
     
 }
+#comment{
+    width: 2vw;
+    height: 1vh;
+}
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 599px){
+    nav
+    {
+        display: grid;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
     .mainnav a{
-        display: block;
-        width: 200px;
-        padding: 10px;
-        border-bottom: 5px solid hsl(0, 0%, 70%)
+        height: 50px;
+        border-bottom: 3px solid hsl(0, 0%, 70%);
     }
     nav > a:active,
     nav > a:focus,
@@ -141,19 +374,48 @@ footer{
     h1, h2{
         color: hsl(100, 50%, 70%);
     }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 @media (min-width: 600px) and (max-width:999px){
     .mainnav a{
         display: inline-flex;
-        flex-direction: row;
-        justify-content: space-around;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(200, 50%, 70%);
     }
     h1, h2{
         color: hsl(200, 50%, 70%);
     }
+    .responsive{
+        width: 50%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 30px;
+    }
+
 }
 @media (min-width: 1000px){
+    .mainnav a{
+        display: inline-flex;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(300, 50%, 70%);
+    }
     h1, h2{
         color: hsl(300, 50%, 70%);
+    }
+    main{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-column-gap: 30px;
     }
 }
